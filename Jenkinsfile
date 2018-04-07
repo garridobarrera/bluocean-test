@@ -9,6 +9,7 @@ pipeline {
     stage('hola') {
       steps {
         echo 'Esto es una prueba'
+        input(message: 'Como te llamas', id: 'CHEMA', ok: 'CHEMA')
       }
     }
   }
