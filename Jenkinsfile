@@ -1,16 +1,14 @@
 pipeline {
   agent any
   stages {
-    stage('build') {
+    stage('compile') {
       steps {
-        sleep 10
-        svn 'svn://localhost'
+        echo 'Compiling....'
       }
     }
-    stage('hola') {
+    stage('build') {
       steps {
-        echo 'Esto es una prueba'
-        input(message: 'Â¿QuÃ© entorno elegir?', id: 'Prueba', ok: 'Prueba', submitter: 'admin', submitterParameter: 'Desarrollo')
+        echo 'building'
       }
     }
   }
