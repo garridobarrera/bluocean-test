@@ -9,7 +9,7 @@ pipeline {
     stage('hola') {
       steps {
         echo 'Esto es una prueba'
-        input(message: '¿Qué entorno elegir?', id: 'Prueba', ok: 'Pre-producción', submitter: 'Producción', submitterParameter: 'Desarrollo')
+        input(message: 'Â¿QuÃ© entorno elegir?', id: 'Prueba', ok: 'Pre-producción', submitter: 'Pre-producción', submitterParameter: 'Desarrollo')
       }
     }
   }
