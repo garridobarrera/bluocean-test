@@ -4,6 +4,7 @@ pipeline {
     stage('build') {
       steps {
         sleep 10
+        svn 'svn://localhost'
       }
     }
     stage('hola') {
