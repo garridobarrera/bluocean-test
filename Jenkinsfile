@@ -18,12 +18,18 @@ pipeline {
         echo 'Ejecutando junit notificaciones'
         echo 'Ejecutando junit tarjetas'
         echo 'Ejecutando junit avisos'
+        echo 'Ejecutando junit citas'
         echo 'Ejecutando junit resto de modulos'
       }
     }
     stage('image docker') {
       steps {
-        echo 'generate image docker'
+        echo 'Generar image docker expedientes'
+        echo 'Generar image docker notificaciones'
+        echo 'Generar image docker tarjetas'
+        echo 'Generar image docker avisos'
+        echo 'Generar image docker citas'
+        echo 'Generar image docker resto de modulos'
       }
     }
     stage('integrated test') {
