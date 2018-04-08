@@ -14,7 +14,11 @@ pipeline {
     }
     stage('unit test') {
       steps {
-        echo 'unit test'
+        echo 'Ejecutando junit expedientes'
+        echo 'Ejecutando junit notificaciones'
+        echo 'Ejecutando junit tarjetas'
+        echo 'Ejecutando junit avisos'
+        echo 'Ejecutando junit resto de modulos'
       }
     }
     stage('image docker') {
