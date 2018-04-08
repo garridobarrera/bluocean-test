@@ -24,12 +24,12 @@ pipeline {
     }
     stage('image docker') {
       steps {
-        echo 'Generar image docker expedientes'
-        echo 'Generar image docker notificaciones'
-        echo 'Generar image docker tarjetas'
-        echo 'Generar image docker avisos'
-        echo 'Generar image docker citas'
-        echo 'Generar image docker resto de modulos'
+        echo 'Generar imagen docker expedientes'
+        echo 'Generar imagen docker notificaciones'
+        echo 'Generar imagen docker tarjetas'
+        echo 'Generar imagen docker avisos'
+        echo 'Generar imagen docker citas'
+        echo 'Generar imagen docker resto de modulos'
       }
     }
     stage('integrated test') {
@@ -40,12 +40,24 @@ pipeline {
     }
     stage('deploy docker') {
       steps {
-        echo 'deploy image docker'
+        echo 'Desplegar en repositorio imagen docker expedientes'
+        echo 'Desplegar en repositorio imagen docker notificaciones'
+        echo 'Desplegar en repositorio imagen docker tarjetas'
+        echo 'Desplegar en repositorio imagen docker avisos'
+        echo 'Desplegar en repositorio imagen docker citas'
+        echo 'Desplegar en repositorio imagen docker resto de modulos'
       }
     }
     stage('deploy environment') {
       steps {
-        echo 'Deploy images docker in environment'
+        echo 'Eleccion de entorno..... PRUEBAS, PRE-PRODUCCION, PRODUCCION'
+        echo 'Desplegar imagen docker de expedientes en OpenShift'
+        echo 'Desplegar imagen docker de notificaciones en OpenShift'
+        echo 'Desplegar imagen docker de tarjetas en OpenShift'
+        echo 'Desplegar imagen docker de avisos en OpenShift'
+        echo 'Desplegar imagen docker de citas en OpenShift'
+        echo 'Desplegar imagen docker de resto de modulos en OpenShift'
+        
       }
     }
   }
