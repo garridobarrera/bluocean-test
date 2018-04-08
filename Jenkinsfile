@@ -3,12 +3,13 @@ pipeline {
   stages {
     stage('compile') {
       steps {
-        echo 'Descargar código de SVN'
+        echo 'Descargar cÃ³digo de SVN'
         echo 'Compilando servicio expedientes'
         echo 'Compilando servicio notificaciones'
         echo 'Compilando servicio tarjetas'
         echo 'Compilando servicio avisos'
         echo 'compilando servicio citas'
+        echo 'Compilando resto de módulos'
       }
     }
     stage('unit test') {
