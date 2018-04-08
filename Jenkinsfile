@@ -9,7 +9,7 @@ pipeline {
         echo 'Compilando servicio tarjetas'
         echo 'Compilando servicio avisos'
         echo 'compilando servicio citas'
-        echo 'Compilando resto de módulos'
+        echo 'Compilando resto de modulos'
       }
     }
     stage('unit test') {
