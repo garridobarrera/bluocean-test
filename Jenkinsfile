@@ -34,7 +34,8 @@ pipeline {
     }
     stage('integrated test') {
       steps {
-        echo 'running integrated test'
+        echo 'Levantar todos los contenedores de las imagenes docker'
+        echo 'Ejecutar banco de pruebas integradas'
       }
     }
     stage('deploy docker') {
